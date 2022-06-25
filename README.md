@@ -58,4 +58,9 @@
 
 ![7](https://user-images.githubusercontent.com/105854514/175771995-d525035f-9dd1-42e4-a25b-2286b2247ad5.PNG)
 ![8](https://user-images.githubusercontent.com/105854514/175771999-a1f61e60-d502-4cb1-932a-7bedde56555d.PNG)
-![10](https://user-images.githubusercontent.com/105854514/175772004-bf0a1eea-35d4-4238-ae24-73ba1ffde54b.PNG)    
+![10](https://user-images.githubusercontent.com/105854514/175772004-bf0a1eea-35d4-4238-ae24-73ba1ffde54b.PNG) 
+
+-- **Ошибки:**
+
+-- Фотография не редактирутеться, на Back все рабоатет, Front шалит. Вывод, нужно преписать на React.    
+-- (Если нужно, могу переписать)
