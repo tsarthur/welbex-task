@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post-Books</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="./blog.css" rel="stylesheet">
+</head>
+
+<body>
+<form class="form form3" id="formElem">
+    <div class="input-group">
+        <label for="exampleInput2" class="input-group-text">Заголовок</label>
+        <input type="text" name="title" class="form-control" id="exampleInput2"
+            placeholder="Должно быть 5-20 символов.">
+    </div>
+    <div class="input-group">
+        <label for="exampleText2" class="input-group-text" type="text" name="text">Описание</label>
+        <textarea class="form-control" placeholder="Должно быть 20-120 символов." id="exampleText2"></textarea>
+    </div>
+    <div class="mb-3">
+        <input class="form-control form-control-sm" id="formFileSm" type="file" name="picture" accept="image/*">
+    </div>
+    <button id="submit2" class="btn btn-primary regBtn3" type="submit">Отправить</button>
+    <div id="error_title"></div>
+    <div id="error_description"></div>
+    <div id="error_fail"></div>
+</form>
+
+
+    <div class="h4 pb-3 mb-4 text-danger border-bottom border-danger hr">
+        Посты
+    </div>
+
+    <div class="row">
+        <div id="postNew"></div>
+    </div>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Редактирование поста</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="editExampleInput1" class="input-group-text">Заголовок</label>
+            <input type="text" name="title" class="form-control" id="editExampleInput1"> 
+            <label for="editExampleInput2" class="input-group-text">Описание</label>
+            <input type="text" name="title" class="form-control" id="editExampleInput2">
+            <div class="mb-3">
+                <input class="form-control form-control-sm" id="editFormFileSm2" type="file" name="picture" accept="image/*">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+          <button id="editPost" type="button" class="btn btn-primary">Редактировать</button>
+        </div>
+        <div id="error_modal_title"></div>
+        <div id="error_modal_description"></div>
+        <div id="error_modal_fail"></div>
+        <div id="error_edit_post_user"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal2" tabindex="7" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Удаление поста</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 style="color: red;">Вы точно хотите удалить пост?</h5>
+        </div>
+        <div class="modal-footer">
+          <button id="сancelPost" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+          <button id="deletePost" type="button" class="btn btn-primary">удалить</button>
+        </div>
+        <div id="error_delete_post_user"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+    <script src="./blog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+
+</html>

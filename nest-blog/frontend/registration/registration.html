@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post-Books</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="./registration.css" rel="stylesheet">
+</head>
+
+<body>
+
+<form class="form form1" action="/nest-blog/frontend/login.html">
+    <div class="title">
+        <legend>Регистрация аккаунта</legend>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputLogin1" class="form-label">Login</label>
+        <input type="text" name="login" class="form-control border-succes" id="exampleInputLogin1"
+            placeholder="arthur12345" required>
+        <div class="col-auto">
+            <span id="loginHelpInline" class="form-text">
+                Должно быть 4-12 символов.
+            </span>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="text" name="password" class="form-control border-succes" id="exampleInputPassword1"
+            placeholder="enotick1228" required>
+        <div class="col-auto">
+            <span id="passwordHelpInline" class="form-text">
+                Должно быть 4-16 символов.
+            </span>
+        </div>
+    </div>
+    <button id="submit1" class="btn btn-primary regBtn" type="submit">Зарегистрироваться</button>
+    <a href="../login/login.html" class="link">Войти</a>
+    <div id="error"></div>
+</form>
+
+</body>
+<script src="./registration.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+</html>

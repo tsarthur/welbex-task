@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+body {
+    background-color: #242729;
+    color: #ffffff;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.title {
+    width: 100%;
+    display: block;
+    font-family: OpenSans-Regular;
+    font-size: 30px;
+    color: #fefefe;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.mb-3 {
+    width: 40%;
+}
+
+.form-text {
+    margin-top: 0.25rem;
+    font-size: .875em;
+    color: #ffffff6b;
+}
+
+.regBtn {
+    font-family: OpenSans-Bold;
+    font-size: 20px;
+    color: #63f2ff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 40%;
+    height: 70px;
+    overflow: hidden;
+    background: #25303a;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+}
+
+.link {
+    font-size: 17px;
+    text-decoration: none;
+}
+
+#error {
+    margin-top: 1%;
+    width: 40%;
+    font-size: 18px;
+    text-align: center;
+}
