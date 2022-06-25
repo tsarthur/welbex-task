@@ -1,20 +1,9 @@
-import {
-  Body,
-  Controller,
-  UploadedFile,
-  UseGuards,
-  Post,
-  UseInterceptors,
-  Get,
-  Delete,
-  Put,
-} from "@nestjs/common";
+import { Body, Controller, UploadedFile, Post, UseInterceptors, Get, Delete, Put } from "@nestjs/common";
 import { CreatePostDto } from "../dto/create-post.dto";
 import { PostsService } from "../services/posts.service";
 import { UserPosts } from "../entities/posts.entities";
 import { FileInterceptor } from "@nestjs/platform-express";
 import { ApiOperation, ApiResponse, ApiTags } from "@nestjs/swagger";
-import { User } from "src/modules/administrations/entities/user.entity";
 import { DeletePostDto } from "../dto/delete-post.DTO";
 import { EditUserPostDto } from "../dto/edit-post.DTO";
 
@@ -43,7 +32,6 @@ export class PostsQueryController {
   @Put()
   @UseInterceptors(FileInterceptor("image"))
   put(@Body() userDto: EditUserPostDto, @UploadedFile() image) {
-    console.log("--0--------")
     return this.postService.editUserPost(userDto, image);
   }
 

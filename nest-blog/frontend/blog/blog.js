@@ -162,21 +162,9 @@ async function getResponse() {
         const editDescription = document.querySelector("#editExampleInput2");
         const image = document.querySelector("#editFormFileSm2");
 
-        // --------------------------------------
-        // console.log(image.value);
-        // console.log(editTitle.value);
-        // console.log(editDescription.value);
-        // --------------------------------------
-
         const postModalTitle = editTitle.value;
         const postModalDescription = editDescription.value;
         const postModalImage = image.value;
-
-        // --------------------------------------
-        // console.log(postTitle.length);
-        // console.log(postDescription.length);
-        // console.log(postImage.length);
-        // --------------------------------------
 
         const titleModalError = document.getElementById("error_modal_title");
         const descriptionModalError = document.getElementById("error_modal_description");
@@ -219,12 +207,13 @@ async function getResponse() {
         await fetch("http://localhost:5000/posts", {
           method: "PUT",
           body: formData2,
-          // body: JSON.stringify({
-          //   id: clickPostId,
-          //   title: editTitle.value,
-          //   content: editDescription.value,
-          //   image: a,
-          // }),
+          body: JSON.stringify({
+            id: clickPostId,
+            title: editTitle.value,
+            content: editDescription.value,
+            image: image.files[0], 
+            // Лучше переписать на React
+          }),
         });
       }
       editPostError.innerHTML = textErrorEdit;

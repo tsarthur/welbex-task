@@ -29,7 +29,7 @@ async function start() {
 
   app.useGlobalPipes(new ValidationPipe());
 
-  await app.listen(PORT, () => console.log(`Server started on port = ${PORT}`));
+  await app.listen(PORT, () => console.log(`Server started on port = http://127.0.0.1:${PORT}/`));
 }
 
 start();

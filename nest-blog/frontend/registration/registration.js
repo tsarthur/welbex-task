@@ -3,8 +3,7 @@ const button = document.querySelector('button');
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
-  //   console.log(form.elements.login.value); // Get Login
-  //   console.log(form.elements.password.value); // Get Password
+
   const res = await fetch("http://localhost:5000/auth/registration", {
     method: "post",
     body: JSON.stringify({

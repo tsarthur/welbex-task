@@ -1,11 +1,4 @@
-import {
-  BelongsToMany,
-  Column,
-  DataType,
-  HasMany,
-  Model,
-  Table,
-} from "sequelize-typescript";
+import { Column, DataType, HasMany, Model,Table } from "sequelize-typescript";
 import { ApiProperty } from "@nestjs/swagger";
 import { UserPosts } from "../../publishs/entities/posts.entities";
 
@@ -33,6 +26,6 @@ export class User extends Model<User, UserCreationAttrs> {
   @Column({ type: DataType.STRING, allowNull: false })
   password: string;
 
-  @HasMany(() => UserPosts) // один пользователь может иметь многим постов;
+  @HasMany(() => UserPosts)
   posts: UserPosts[];
 }

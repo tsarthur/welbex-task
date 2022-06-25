@@ -1,11 +1,4 @@
-import {
-  BelongsTo,
-  Column,
-  DataType,
-  ForeignKey,
-  Model,
-  Table,
-} from "sequelize-typescript";
+import { BelongsTo, Column, DataType, ForeignKey, Model, Table } from "sequelize-typescript";
 import { ApiProperty } from "@nestjs/swagger";
 import { User } from "../../administrations/entities/user.entity";
 
@@ -44,6 +37,6 @@ export class UserPosts extends Model<UserPosts, PostCreationAttrs> {
   @Column({ type: DataType.INTEGER })
   userId: number;
 
-  @BelongsTo(() => User) // один пользователь может иметь многим постов;
+  @BelongsTo(() => User)
   author: User;
 }

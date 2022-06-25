@@ -11,5 +11,5 @@ export class EditUserPostDto {
   @ApiProperty({ example: "Еще в 1995 году..", description: "Описание" })
   @IsString({ message: "Должно быть строкой" })
   @Length(20, 120, { message: "Не меньше 20 и не больше 120" })
-  readonly content: string;А
+  readonly content: string;
 }

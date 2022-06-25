@@ -1,4 +1,4 @@
-import { Body, Controller,Delete, Get, Post, UsePipes } from "@nestjs/common";
+import { Body, Controller, Delete, Get, Post, UsePipes } from "@nestjs/common";
 import { ApiOperation, ApiResponse, ApiTags } from "@nestjs/swagger";
 import { CreateUserDto } from "../dto/create-user.DTO";
 import { UsersService } from "../services/users.service";
@@ -9,7 +9,7 @@ import { DeleteUserDto } from "../dto/delete-user.Dto";
 @ApiTags("Пользователи")
 @Controller("users")
 export class UserQueryController {
-  constructor(private usersService: UsersService) {}
+  constructor(private usersService: UsersService) { }
 
   @ApiOperation({ summary: "Получить всех пользователей" })
   @ApiResponse({ status: 200, type: [User] })
