@@ -51,12 +51,8 @@
 
 ![4](https://user-images.githubusercontent.com/105854514/175771985-8ded0698-7212-4498-984f-b1020b7f2dfd.PNG)
 ![5](https://user-images.githubusercontent.com/105854514/175771990-2dc2df26-4ee1-4872-9a24-bdbe66c40682.PNG)
-![9](https://user-images.githubusercontent.com/105854514/175772003-438028d9-a88f-43ea-b8f6-d9bff8217cbe.PNG)
-
-
-    — Приложение представляет собой страницу, на которой могут делать записи любые авторизованные пользователи.
-
 ![6](https://user-images.githubusercontent.com/105854514/175771992-e25385c7-d5ab-42f1-b0a1-9aa02215c9ca.PNG)
+![9](https://user-images.githubusercontent.com/105854514/175772003-438028d9-a88f-43ea-b8f6-d9bff8217cbe.PNG)
 
     — Автор записи может редактировать или удалять только свои записи.
 
